@@ -13,10 +13,11 @@
     [
       {
         "name": "ccln",
-        "url": "https://github.com/cclngit"
+        "url": "https://github.com/cclngit",
+        "maintainer": true
       }
     ],
-    "version": "1.0.0",
+    "version": "1.0.1",
     "license": "MIT",
     "homepage": "https://github.com/MoreThanRobotsFR/MTR_STUSB4500"
 }
