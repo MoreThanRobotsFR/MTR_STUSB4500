@@ -35,8 +35,9 @@ public:
 
     /**
      * @brief Initializes the STUSB4500 device.
+     * @param baudrate The baudrate of the I2C communication.
      */
-    void init();
+    void init(uint32_t baudrate = 100000);
 
     /**
      * @brief Reads a register from the STUSB4500.
@@ -126,6 +127,8 @@ public:
 
 private:
     uint8_t _i2c_addr;
+    uint32_t _baudrate;
+
 };
 
 #endif // MTR_STUSB4500_H

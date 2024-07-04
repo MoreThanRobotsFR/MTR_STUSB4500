@@ -4,8 +4,9 @@
 MTR_STUSB4500::MTR_STUSB4500(uint8_t i2c_addr) : _i2c_addr(i2c_addr) {}
 
 // Initializes the STUSB4500 device
-void MTR_STUSB4500::init() {
+void MTR_STUSB4500::init(uint32_t baudrate) {
     Wire.begin();
+    Wire.setClock(baudrate);
 }
 
 // Reads a register from the STUSB4500
