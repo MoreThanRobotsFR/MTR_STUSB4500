@@ -28,7 +28,7 @@
 class MTR_STUSB4500 {
 public:
     /**
-     * @brief Constructor to initialize the STUSB4500 object.
+     * @brief Constructor to initialize the MTR_STUSB4500 object.
      * @param i2c_addr The I2C address of the STUSB4500.
      */
     MTR_STUSB4500(uint8_t i2c_addr = STUSB4500_I2C_ADDR);
